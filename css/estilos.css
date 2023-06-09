@@ -14,29 +14,35 @@ body {
 /* HEADER */
 header {
   background-color: #1a1818;
-  margin: 0; }
-  header h1 {
-    color: #23439b;
-    background-color: #1a1818;
-    padding: 0.5rem;
-    margin: 0px; }
+  margin: 0;
+  /* MENU NAV */ }
+  header div {
+    display: flex;
+    align-items: center; }
+    header div a img {
+      width: 95px;
+      height: 95px;
+      margin: 0.5rem;
+      padding: 0.5rem; }
+    header div h1 {
+      color: #23439b;
+      background-color: #1a1818;
+      padding: 0.5rem;
+      margin: 0; }
+  header nav .navbar-toggler {
+    background-color: #4fa3dc; }
+  header nav .nav-link:hover {
+    text-decoration: underline; }
 
 .no-padding {
   padding: 0; }
-
-/* MENU NAV */
-.nav-link:hover {
-  text-decoration: underline; }
-
-.navbar-toggler {
-  background-color: #4fa3dc; }
 
 /* MAIN */
 main h2 {
   text-decoration: underline;
   color: #c5d9e7;
-  margin: 0;
-  padding: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   display: grid;
   justify-content: center; }
 
@@ -126,8 +132,8 @@ footer {
     text-align: center;
     color: #395cbb; }
 
-/* media queries celular*/
-@media screen and (min-width: 400px) {
+/* media queries CELULAR*/
+@media screen and (min-width: 345px) {
   /* MENU NAV */
   .navbar-fixed .navbar-collapse {
     display: block;
@@ -168,7 +174,8 @@ footer {
     display: flex;
     flex-flow: column nowrap; } }
 
-/* media queries desktop */
+/* media queries TABLET */
+/* media queries DESKTOP */
 @media screen and (min-width: 1024px) {
   /* MENU NAV */
   .navbar-fixed .navbar-nav {
