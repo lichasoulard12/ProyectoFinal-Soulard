@@ -4,6 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+//IMPORTS
+@import "herramientas/variables";
+@import "herramientas/mixin";
+@import "herramientas/extend";
+
+/* -- BODY -- */
 body{
     font-family: 'Montserrat Alternates', sans-serif;
     background-image: url(../img/fondo.jpg);
@@ -11,7 +17,7 @@ body{
     background-size: auto;
 }
 
-/* HEADER */
+/* -- HEADER -- */
 header{
     background-color: rgb(26, 24, 24);
     margin: 0;
@@ -32,7 +38,7 @@ header{
         }
     }
 
-    /* MENU NAV */
+    /* -- MENU NAV -- */
     nav{
         .navbar-toggler{
             background-color: rgb(79, 163, 220);
@@ -46,11 +52,11 @@ header{
     padding: 0;
 }
 
-/* MAIN */
+/* -- MAIN -- */
 main{
     h2{
         text-decoration: underline;
-        color:#c5d9e7;
+        color: $color-secundario;
         margin: 0.5rem;
         padding: 0.5rem;
         display: grid;
@@ -59,34 +65,75 @@ main{
     p{
         color: white;
         text-indent: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.650);
     }
     h3{
-        color: white;
+        color: $color-secundario;
+        margin-top: 0.5rem;
     }
 }
 
-/* MAIN (INDEX) */
-.index-main p{
-    margin-bottom: 0px;
-}
-.imagen-index{
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-row: auto;
+/* -- MAIN (INDEX) -- */
+.index-main{
     p{
-        margin-right: 0.5rem;
+        margin-bottom: 0.6rem;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    .introduccion, .introduccion-dos{
+        p{
+            margin: 0.1rem;
+            height: fit-content;
+        }
+    }
+    .introduccion-dos{
+        padding: 0;
+        .div-uno{
+            margin: 0.1rem;
+            padding: 0;
+            display: grid;
+            grid-template-areas: 
+            "p1 section-img1"
+            "p2 section-img1";
+            .p1{
+                grid-area: p1;
+            }
+            .p2{
+                grid-area: p2;
+            }
+            img{
+                width: auto;
+                height: 300px;
+                grid-area: section-img1;
+            }
+        }
+        .div-dos{
+            display: grid;
+            grid-template-areas: 
+            "h33 h33"
+            "section-img2 p3";
+            h3{
+                grid-area: h33;
+            }
+            p{
+                grid-area: p3;
+                align-self: center;
+                justify-self: center;
+            }
+            img{
+                grid-area: section-img2;
+                width: 450px;
+                height: auto;
+            }
+        }
     }
 }
-.section-img{
-    display: flex;
-    justify-content: space-evenly;
-}
-.section-img1, .section-img2{
-    width: 400px;
-    height: 300px;
-}
 
-/* MAIN (GALERÍA) */
+
+/* -- MAIN (GALERÍA) -- */
 .galeria-p p{
     margin-bottom: 0.5rem;
 }
@@ -104,7 +151,7 @@ main{
     }
 }
 
-/* MAIN (NOTICIAS) */
+/* -- MAIN (NOTICIAS) -- */
 .news{
     display: flex;
     justify-content: space-evenly;
@@ -132,7 +179,7 @@ main{
     }
 }
 
-/* MAIN (SOBRENOSOTROS) */
+/* -- MAIN (SOBRENOSOTROS) -- */
 .info{
     .formulario{
         display: block;
@@ -152,9 +199,9 @@ main{
     }
 }
 
-/* FOOTER */
+/* -- FOOTER -- */
 footer{
-    background-color: rgb(26, 24, 24);
+    background-color: $color-principal1;
     padding: 5px;
     h4{
         margin: 5px;
@@ -163,7 +210,8 @@ footer{
     }
 }
 
-/* media queries CELULAR*/
+/* -- MEDIA QUERIES CELULAR -- */
+/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
 @media screen and (min-width:345px){ 
     /* MENU NAV */
     .navbar-fixed .navbar-collapse{
@@ -223,9 +271,10 @@ footer{
 /* media queries TABLET */
 
 
-/* media queries DESKTOP */
+/* -- MEDIA QUERIES DESKTOP -- */
+/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
 @media screen and (min-width:1024px){
-    /* MENU NAV */
+    /* -- MENU NAV -- */
     .navbar-fixed .navbar-nav{
         flex-direction: row;
     }

@@ -5,17 +5,18 @@
   margin: 0;
   box-sizing: border-box; }
 
+/* -- BODY -- */
 body {
   font-family: 'Montserrat Alternates', sans-serif;
   background-image: url(../img/fondo.jpg);
   background-repeat: repeat;
   background-size: auto; }
 
-/* HEADER */
+/* -- HEADER -- */
 header {
   background-color: #1a1818;
   margin: 0;
-  /* MENU NAV */ }
+  /* -- MENU NAV -- */ }
   header div {
     display: flex;
     align-items: center; }
@@ -37,7 +38,7 @@ header {
 .no-padding {
   padding: 0; }
 
-/* MAIN */
+/* -- MAIN -- */
 main h2 {
   text-decoration: underline;
   color: #c5d9e7;
@@ -48,31 +49,56 @@ main h2 {
 
 main p {
   color: white;
-  text-indent: 0.5rem; }
+  text-indent: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.65); }
 
 main h3 {
-  color: white; }
+  color: #c5d9e7;
+  margin-top: 0.5rem; }
 
-/* MAIN (INDEX) */
+/* -- MAIN (INDEX) -- */
 .index-main p {
-  margin-bottom: 0px; }
+  margin-bottom: 0.6rem; }
 
-.imagen-index {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-row: auto; }
-  .imagen-index p {
-    margin-right: 0.5rem; }
-
-.section-img {
+.index-main div {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: center;
+  padding: 0.5rem; }
 
-.section-img1, .section-img2 {
-  width: 400px;
-  height: 300px; }
+.index-main .introduccion p, .index-main .introduccion-dos p {
+  margin: 0.1rem;
+  height: fit-content; }
 
-/* MAIN (GALERÍA) */
+.index-main .introduccion-dos {
+  padding: 0; }
+  .index-main .introduccion-dos .div-uno {
+    margin: 0.1rem;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "p1 section-img1" "p2 section-img1"; }
+    .index-main .introduccion-dos .div-uno .p1 {
+      grid-area: p1; }
+    .index-main .introduccion-dos .div-uno .p2 {
+      grid-area: p2; }
+    .index-main .introduccion-dos .div-uno img {
+      width: auto;
+      height: 300px;
+      grid-area: section-img1; }
+  .index-main .introduccion-dos .div-dos {
+    display: grid;
+    grid-template-areas: "h33 h33" "section-img2 p3"; }
+    .index-main .introduccion-dos .div-dos h3 {
+      grid-area: h33; }
+    .index-main .introduccion-dos .div-dos p {
+      grid-area: p3;
+      align-self: center;
+      justify-self: center; }
+    .index-main .introduccion-dos .div-dos img {
+      grid-area: section-img2;
+      width: 450px;
+      height: auto; }
+
+/* -- MAIN (GALERÍA) -- */
 .galeria-p p {
   margin-bottom: 0.5rem; }
 
@@ -87,7 +113,7 @@ main h3 {
     width: auto;
     margin: 0.5rem; }
 
-/* MAIN (NOTICIAS) */
+/* -- MAIN (NOTICIAS) -- */
 .news {
   display: flex;
   justify-content: space-evenly; }
@@ -108,7 +134,7 @@ main h3 {
     .news .noticias a:hover {
       font-style: italic; }
 
-/* MAIN (SOBRENOSOTROS) */
+/* -- MAIN (SOBRENOSOTROS) -- */
 .info .formulario {
   display: block; }
   .info .formulario fieldset {
@@ -123,7 +149,7 @@ main h3 {
 .info ul {
   color: white; }
 
-/* FOOTER */
+/* -- FOOTER -- */
 footer {
   background-color: #1a1818;
   padding: 5px; }
@@ -132,7 +158,8 @@ footer {
     text-align: center;
     color: #395cbb; }
 
-/* media queries CELULAR*/
+/* -- MEDIA QUERIES CELULAR -- */
+/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
 @media screen and (min-width: 345px) {
   /* MENU NAV */
   .navbar-fixed .navbar-collapse {
@@ -175,9 +202,10 @@ footer {
     flex-flow: column nowrap; } }
 
 /* media queries TABLET */
-/* media queries DESKTOP */
+/* -- MEDIA QUERIES DESKTOP -- */
+/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
 @media screen and (min-width: 1024px) {
-  /* MENU NAV */
+  /* -- MENU NAV -- */
   .navbar-fixed .navbar-nav {
     flex-direction: row; }
   .navbar-fixed .navbar-nav .nav-item {
