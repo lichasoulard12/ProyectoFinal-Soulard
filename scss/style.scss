@@ -4,10 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-//IMPORTS
+//IMPORTS HERRAMIENTAS
 @import "herramientas/variables";
 @import "herramientas/mixin";
 @import "herramientas/extend";
+//IMPORTS HTMLs
+@import "html/index";
 
 /* -- BODY -- */
 body{
@@ -19,7 +21,7 @@ body{
 
 /* -- HEADER -- */
 header{
-    background-color: rgb(26, 24, 24);
+    background-color: $color-principal1;
     margin: 0;
     div{
         display: flex;
@@ -31,8 +33,8 @@ header{
             padding: 0.5rem ;
         }
         h1{
-            color: rgb(35, 67, 155);
-            background-color: rgb(26, 24, 24);
+            color: $color-principal2;
+            background-color: $color-principal1;
             padding: 0.5rem;
             margin: 0;
         }
@@ -72,66 +74,6 @@ main{
         margin-top: 0.5rem;
     }
 }
-
-/* -- MAIN (INDEX) -- */
-.index-main{
-    p{
-        margin-bottom: 0.6rem;
-    }
-    div{
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-    }
-    .introduccion, .introduccion-dos{
-        p{
-            margin: 0.1rem;
-            height: fit-content;
-        }
-    }
-    .introduccion-dos{
-        padding: 0;
-        .div-uno{
-            margin: 0.1rem;
-            padding: 0;
-            display: grid;
-            grid-template-areas: 
-            "p1 section-img1"
-            "p2 section-img1";
-            .p1{
-                grid-area: p1;
-            }
-            .p2{
-                grid-area: p2;
-            }
-            img{
-                width: auto;
-                height: 300px;
-                grid-area: section-img1;
-            }
-        }
-        .div-dos{
-            display: grid;
-            grid-template-areas: 
-            "h33 h33"
-            "section-img2 p3";
-            h3{
-                grid-area: h33;
-            }
-            p{
-                grid-area: p3;
-                align-self: center;
-                justify-self: center;
-            }
-            img{
-                grid-area: section-img2;
-                width: 450px;
-                height: auto;
-            }
-        }
-    }
-}
-
 
 /* -- MAIN (GALERÍA) -- */
 .galeria-p p{
@@ -200,13 +142,25 @@ main{
 }
 
 /* -- FOOTER -- */
-footer{
+.pie-pagina{
     background-color: $color-principal1;
-    padding: 5px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
     h4{
-        margin: 5px;
+        background-color: $color-principal1;
+        color: $color-principal2;
+        margin: 0.5rem;
         text-align: center;
-        color: rgb(57, 92, 187);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-icons{
+        display: flex;
+        width: fit-content;
+        img{
+            padding: 0.5rem;
+        }
     }
 }
 

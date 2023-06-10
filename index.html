@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- etiquetas meta -->
+    <meta name="description" content="'Astronomía para todos' es el sitio para aquellos que quieren conocer sobre el maravilloso mundo que nos brinda el campo de la Astronomía">
+    <meta name="keywords" content="Astronomia, Astronomia para Todos, ciencia, aprender astronomia,  ">
     <!-- link tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- link css -->
+    <!-- link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Astronomía para todos</title>
 </head>
@@ -32,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link link-light" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link link-light" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-light" href="pages/galeria.html">Galería</a>
@@ -52,14 +57,15 @@
         </nav>
     </header>
 
-    <!-- contenido principal -->
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container index-main">
         <h2>Bienvenido a "Astronomía para todos"</h2>
         <p> Bienvenidos a "Astronomía para todos", tu página dedicada al fascinante mundo de la astronomía. Si alguna vez te preguntaste qué hay más allá de nuestro planeta, si te maravilla la inmensidad del universo o si simplemente deseás explorar los misterios del cosmos, has llegado al lugar indicado. En "Astronomia para todos" vas a encontrar información accesible y apasionante sobre la astronomía, desde los fundamentos básicos hasta los descubrimientos más recientes. Nuestro objetivo es acercar el conocimiento astronómico a todos, sin importar tu nivel de experiencia. Preparate para embarcarte en un viaje cósmico, donde descubrirás galaxias distantes, planetas fascinantes, estrellas en explosión y mucho más. ¡Empecemos a explorar los secretos del universo juntos!</p>
         <div>
-            <img src="img/universo.jpg" alt="imagen del universo">
+            <img src="img/gif.gif" alt="" height="450" width="500">
         </div>
-        <section class="introduccion">
+        <!-- SECCIÓN 1 - ¿QUE ES LA ASTRONOMIA? -->
+        <section data-aos="zoom-in" class="introduccion">
             <h3> ¿Qué es la Astronomía? </h3>
             <p>La astronomía es la ciencia que se encarga del estudio y comprensión del universo, sus componentes, estructuras y fenómenos celestes. Es una disciplina que ha sido fundamental tanto en la ciencia antigua como en la ciencia moderna, y su importancia radica en el profundo impacto que ha tenido en nuestra comprensión del mundo, del universo y de nuestro lugar en él. </p>
             <p>Desde tiempos antiguos, la astronomía ha sido utilizada para explorar el cielo y comprender los movimientos de los astros. Civilizaciones como los egipcios, los babilonios y los mayas desarrollaron sistemas de observación y registro de los cuerpos celestes, estableciendo patrones y calendarios basados en sus movimientos. La astronomía fue esencial para la navegación, la agricultura, la astrología y el desarrollo de culturas antiguas. </p> 
@@ -67,31 +73,48 @@
             <p> El estudio de las estrellas se remonta a miles de años atrás. Los primeros registros sistemáticos de observación estelar datan de la antigua Mesopotamia, alrededor del 3000 a.C. Sin embargo, la astronomía como ciencia formal y sistemática se desarrolló en la antigua Grecia, con figuras destacadas como Aristóteles, Hiparco y Ptolomeo. A partir de entonces, el estudio de las estrellas ha sido continuo y se ha ampliado en diferentes culturas y períodos históricos </p>
             <p> Por estas razones, podemos decir que la Astronomía es una ciencia muy intrigante y maravillosa. Nos permite entender el lugar que ocupamos en el Cosmos y es capaz de brindarnos conocimiento y fotografías que superan nuestra imaginación</p>
         </section>
+        <!-- SECCIÓN 2 - ¿DONDE NOS ENCONTRAMOS? -->
         <section class="introduccion-dos">
             <h3> ¿Dónde nos encontramos? </h3>
-            <div class="div-uno">
+            <div data-aos="fade-left" class="div-uno">
                 <p class="p1"> Nuestro pequeño planeta, llamado Tierra, se encuentra ubicada en la galaxia conocida como la Vía Láctea. Esta galaxia es una vasta estructura compuesta por cientos de miles de millones de estrellas, nubes de gas, polvo cósmico y sistemas planetarios. La Vía Láctea tiene una forma espiral, con brazos espirales que se extienden desde un núcleo central. Nuestro sistema solar, junto con la Tierra, se encuentra en uno de estos brazos espirales, conocido como el Brazo de Orión o el Brazo de Orión Local. </p>
                 <p class="p2"> En esta imagen, en la parte inferior derecha, se puede ver demarcada la zona en donde se encuentra nuestro sistema solar</p>
                 <img class="section-img1" src="img/img4.jpg" alt="imagen de la vía lactea con la representacion de donde se encuentra el sistema solar">
             </div>
             <hr class="text-light">
-            <div class="div-dos">
+            <!-- SECCIÓN 3 - NUESTROS VECINOS -->
+            <div data-aos="fade-right" class="div-dos">
                 <h3>Nuestros Vecinos</h3>
                 <p> Nuestra Vía Lactea forma parte de lo que se podria llamar un vecindario. Si nos alejamos más, podemos ver que nuestra galaxia forma parte de un conjunto más amplio conocido como el Grupo Local, que incluye varias galaxias vecinas, como Andrómeda y la Galaxia del Triángulo. A su vez, el Grupo Local es solo una pequeña parte de la inmensidad cósmica, que comprende miles de millones de galaxias dispersas en vastas estructuras conocidas como supercúmulos. Nuestro Grupo Local se encuentra dentro del Supercúmulo de Virgo, un supercúmulo que contiene alrededor de 100 grupos y cúmulos de galaxias, que está dominado por el cúmulo de Virgo, localizado cerca de su centro </p>
                 <a href="https://es.wikipedia.org/wiki/Superc%C3%BAmulo_de_Virgo#/media/Archivo:Superc%C3%BAmulo_de_Virgo.jpg" target="_blank"><img src="img/SupercumuloVirgo.jpg" alt="representación gráfica del Supercúmulo de Virgo"></a>
             </div>
             <br>
         </section>
-        
     </main>
 
-    <!-- pie de página -->
-    <footer>
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
         <h4>Todos los derechos reservados</h4>
-        
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/instagram.png" alt="Ícono de Instagram">
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="img/facebook.png" alt="Ícono de Facebook">
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+                <img src="img/twitter.png" alt="Ícono de Twitter">
+            </a>
+        </div>
     </footer>
 
-    <!-- script bootstrap -->
+    <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

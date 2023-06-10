@@ -1,0 +1,62 @@
+/* -- MAIN (INDEX) -- */
+.index-main{
+    p{
+        margin-bottom: 0.6rem;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    .introduccion, .introduccion-dos{
+        p{
+            margin: 0.1rem;
+            height: fit-content;
+        }
+    }
+    .introduccion-dos{
+        padding: 0;
+        hr{
+            margin-bottom: 0.5rem;
+        }
+        .div-uno{
+            margin: 0.1rem;
+            padding: 0;
+            display: grid;
+            grid-template-areas: 
+            "p1 section-img1"
+            "p2 section-img1";
+            .p1{
+                grid-area: p1;
+            }
+            .p2{
+                grid-area: p2;
+            }
+            img{
+                width: auto;
+                height: 300px;
+                grid-area: section-img1;
+            }
+        }
+        .div-dos{
+            display: grid;
+            grid-template-areas: 
+            "h33 h33"
+            "section-img2 p3";
+            padding: 0.1rem;
+            h3{
+                grid-area: h33;
+            }
+            p{
+                grid-area: p3;
+                align-self: center;
+                justify-self: center;
+            }
+            img{
+                grid-area: section-img2;
+                width: 450px;
+                height: auto;
+            }
+        }
+    }
+}

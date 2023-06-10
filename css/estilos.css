@@ -5,6 +5,51 @@
   margin: 0;
   box-sizing: border-box; }
 
+/* -- MAIN (INDEX) -- */
+.index-main p {
+  margin-bottom: 0.6rem; }
+
+.index-main div {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem; }
+
+.index-main .introduccion p, .index-main .introduccion-dos p {
+  margin: 0.1rem;
+  height: fit-content; }
+
+.index-main .introduccion-dos {
+  padding: 0; }
+  .index-main .introduccion-dos hr {
+    margin-bottom: 0.5rem; }
+  .index-main .introduccion-dos .div-uno {
+    margin: 0.1rem;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "p1 section-img1" "p2 section-img1"; }
+    .index-main .introduccion-dos .div-uno .p1 {
+      grid-area: p1; }
+    .index-main .introduccion-dos .div-uno .p2 {
+      grid-area: p2; }
+    .index-main .introduccion-dos .div-uno img {
+      width: auto;
+      height: 300px;
+      grid-area: section-img1; }
+  .index-main .introduccion-dos .div-dos {
+    display: grid;
+    grid-template-areas: "h33 h33" "section-img2 p3";
+    padding: 0.1rem; }
+    .index-main .introduccion-dos .div-dos h3 {
+      grid-area: h33; }
+    .index-main .introduccion-dos .div-dos p {
+      grid-area: p3;
+      align-self: center;
+      justify-self: center; }
+    .index-main .introduccion-dos .div-dos img {
+      grid-area: section-img2;
+      width: 450px;
+      height: auto; }
+
 /* -- BODY -- */
 body {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -55,48 +100,6 @@ main p {
 main h3 {
   color: #c5d9e7;
   margin-top: 0.5rem; }
-
-/* -- MAIN (INDEX) -- */
-.index-main p {
-  margin-bottom: 0.6rem; }
-
-.index-main div {
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem; }
-
-.index-main .introduccion p, .index-main .introduccion-dos p {
-  margin: 0.1rem;
-  height: fit-content; }
-
-.index-main .introduccion-dos {
-  padding: 0; }
-  .index-main .introduccion-dos .div-uno {
-    margin: 0.1rem;
-    padding: 0;
-    display: grid;
-    grid-template-areas: "p1 section-img1" "p2 section-img1"; }
-    .index-main .introduccion-dos .div-uno .p1 {
-      grid-area: p1; }
-    .index-main .introduccion-dos .div-uno .p2 {
-      grid-area: p2; }
-    .index-main .introduccion-dos .div-uno img {
-      width: auto;
-      height: 300px;
-      grid-area: section-img1; }
-  .index-main .introduccion-dos .div-dos {
-    display: grid;
-    grid-template-areas: "h33 h33" "section-img2 p3"; }
-    .index-main .introduccion-dos .div-dos h3 {
-      grid-area: h33; }
-    .index-main .introduccion-dos .div-dos p {
-      grid-area: p3;
-      align-self: center;
-      justify-self: center; }
-    .index-main .introduccion-dos .div-dos img {
-      grid-area: section-img2;
-      width: 450px;
-      height: auto; }
 
 /* -- MAIN (GALERÍA) -- */
 .galeria-p p {
@@ -150,13 +153,23 @@ main h3 {
   color: white; }
 
 /* -- FOOTER -- */
-footer {
+.pie-pagina {
   background-color: #1a1818;
-  padding: 5px; }
-  footer h4 {
-    margin: 5px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center; }
+  .pie-pagina h4 {
+    background-color: #1a1818;
+    color: #23439b;
+    margin: 0.5rem;
     text-align: center;
-    color: #395cbb; }
+    margin-left: auto;
+    margin-right: auto; }
+  .pie-pagina .footer-icons {
+    display: flex;
+    width: fit-content; }
+    .pie-pagina .footer-icons img {
+      padding: 0.5rem; }
 
 /* -- MEDIA QUERIES CELULAR -- */
 /* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
