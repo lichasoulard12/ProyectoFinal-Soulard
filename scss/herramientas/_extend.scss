@@ -1,0 +1,19 @@
+//box-shadow
+%box-shadow{
+    box-shadow: $color-secundario 2px 2px 25px;
+}
+
+//flex
+%flex{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+//párrafos
+%parrafo{
+    color: white;
+    text-indent: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.650);
+    margin-bottom: 0.2rem;
+}

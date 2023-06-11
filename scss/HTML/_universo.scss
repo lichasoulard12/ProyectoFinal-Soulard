@@ -1,0 +1,19 @@
+/* MAIN (EL UNIVERSO) */
+.universo-main{
+    .click-img{
+        width: auto;
+        display: inline;
+        a{
+            font-style: italic;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .div-universo{
+        @extend %flex;
+        img{
+            width: 750px;
+            height: auto;
+        }
+    }
+}

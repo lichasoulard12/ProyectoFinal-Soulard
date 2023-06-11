@@ -4,9 +4,10 @@
         margin-bottom: 0.6rem;
     }
     div{
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
+        @extend %flex;
+        img{
+            @extend %box-shadow;
+        }
     }
     .introduccion, .introduccion-dos{
         p{
@@ -16,9 +17,6 @@
     }
     .introduccion-dos{
         padding: 0;
-        hr{
-            margin-bottom: 0.5rem;
-        }
         .div-uno{
             margin: 0.1rem;
             padding: 0;
@@ -36,6 +34,8 @@
                 width: auto;
                 height: 300px;
                 grid-area: section-img1;
+                @extend %box-shadow;
+                margin-left: 0.5rem;
             }
         }
         .div-dos{
@@ -51,11 +51,14 @@
                 grid-area: p3;
                 align-self: center;
                 justify-self: center;
+                margin-left: 0.5rem;
             }
             img{
                 grid-area: section-img2;
                 width: 450px;
                 height: auto;
+                @extend %box-shadow;
+                margin-right: 0.5rem;
             }
         }
     }

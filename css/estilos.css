@@ -5,14 +5,23 @@
   margin: 0;
   box-sizing: border-box; }
 
-/* -- MAIN (INDEX) -- */
-.index-main p {
-  margin-bottom: 0.6rem; }
+.index-main div img, .index-main .introduccion-dos .div-uno img, .index-main .introduccion-dos .div-dos img {
+  box-shadow: #c5d9e7 2px 2px 25px; }
 
-.index-main div {
+.index-main div, .universo-main .div-universo {
   display: flex;
   justify-content: center;
   padding: 0.5rem; }
+
+main p {
+  color: white;
+  text-indent: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 0.2rem; }
+
+/* -- MAIN (INDEX) -- */
+.index-main p {
+  margin-bottom: 0.6rem; }
 
 .index-main .introduccion p, .index-main .introduccion-dos p {
   margin: 0.1rem;
@@ -20,8 +29,6 @@
 
 .index-main .introduccion-dos {
   padding: 0; }
-  .index-main .introduccion-dos hr {
-    margin-bottom: 0.5rem; }
   .index-main .introduccion-dos .div-uno {
     margin: 0.1rem;
     padding: 0;
@@ -34,7 +41,8 @@
     .index-main .introduccion-dos .div-uno img {
       width: auto;
       height: 300px;
-      grid-area: section-img1; }
+      grid-area: section-img1;
+      margin-left: 0.5rem; }
   .index-main .introduccion-dos .div-dos {
     display: grid;
     grid-template-areas: "h33 h33" "section-img2 p3";
@@ -44,11 +52,26 @@
     .index-main .introduccion-dos .div-dos p {
       grid-area: p3;
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      margin-left: 0.5rem; }
     .index-main .introduccion-dos .div-dos img {
       grid-area: section-img2;
       width: 450px;
-      height: auto; }
+      height: auto;
+      margin-right: 0.5rem; }
+
+/* MAIN (EL UNIVERSO) */
+.universo-main .click-img {
+  width: auto;
+  display: inline; }
+  .universo-main .click-img a {
+    font-style: italic;
+    text-decoration: none;
+    color: white; }
+
+.universo-main .div-universo img {
+  width: 750px;
+  height: auto; }
 
 /* -- BODY -- */
 body {
@@ -92,14 +115,22 @@ main h2 {
   display: grid;
   justify-content: center; }
 
-main p {
-  color: white;
-  text-indent: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.65); }
-
 main h3 {
   color: #c5d9e7;
   margin-top: 0.5rem; }
+
+main h4 {
+  color: #c5d9e7; }
+
+main img {
+  transition: transform 0.3s ease; }
+
+main img:hover {
+  transform: scale(1.02); }
+
+main hr {
+  margin-bottom: 0.5rem;
+  color: white; }
 
 /* -- MAIN (GALERÍA) -- */
 .galeria-p p {
@@ -168,8 +199,11 @@ main h3 {
   .pie-pagina .footer-icons {
     display: flex;
     width: fit-content; }
-    .pie-pagina .footer-icons img {
-      padding: 0.5rem; }
+    .pie-pagina .footer-icons a {
+      padding: 0.5rem;
+      transition: transform 0.3s ease; }
+    .pie-pagina .footer-icons a:hover {
+      transform: scale(1.1); }
 
 /* -- MEDIA QUERIES CELULAR -- */
 /* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/

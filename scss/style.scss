@@ -10,6 +10,8 @@
 @import "herramientas/extend";
 //IMPORTS HTMLs
 @import "html/index";
+@import "html/universo";
+@import "html/galeria";
 
 /* -- BODY -- */
 body{
@@ -64,14 +66,25 @@ main{
         display: grid;
         justify-content: center;
     }
-    p{
-        color: white;
-        text-indent: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.650);
-    }
     h3{
         color: $color-secundario;
         margin-top: 0.5rem;
+    }
+    h4{
+        color: $color-secundario;
+    }
+    p{
+        @extend %parrafo
+    }
+    img{
+        transition: transform 0.3s ease;
+    }
+    img:hover{
+        transform: scale(1.02);
+    }
+    hr{
+        margin-bottom: 0.5rem;
+        color: white;
     }
 }
 
@@ -158,8 +171,12 @@ main{
     .footer-icons{
         display: flex;
         width: fit-content;
-        img{
+        a{
             padding: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        a:hover{
+            transform: scale(1.1);
         }
     }
 }
