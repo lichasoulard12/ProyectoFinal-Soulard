@@ -10,10 +10,20 @@
     padding: 0.5rem;
 }
 
+//Titulo h2
+%h2{
+    text-decoration: underline;
+        color: $color-secundario;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+}
+
 //párrafos
 %parrafo{
     color: white;
     text-indent: 0.5rem;
     background-color: rgba(0, 0, 0, 0.650);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
 }

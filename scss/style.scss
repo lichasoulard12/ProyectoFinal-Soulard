@@ -29,8 +29,7 @@ header{
         display: flex;
         align-items: center;
         a img{
-            width: 95px;
-            height: 95px;
+            @include wyh (95px, 95px);
             margin: 0.5rem;
             padding: 0.5rem ;
         }
@@ -59,12 +58,7 @@ header{
 /* -- MAIN -- */
 main{
     h2{
-        text-decoration: underline;
-        color: $color-secundario;
-        margin: 0.5rem;
-        padding: 0.5rem;
-        display: grid;
-        justify-content: center;
+        @extend %h2;
     }
     h3{
         color: $color-secundario;
@@ -74,7 +68,7 @@ main{
         color: $color-secundario;
     }
     p{
-        @extend %parrafo
+        @extend %parrafo;
     }
     img{
         transition: transform 0.3s ease;
@@ -83,26 +77,7 @@ main{
         transform: scale(1.02);
     }
     hr{
-        margin-bottom: 0.5rem;
         color: white;
-    }
-}
-
-/* -- MAIN (GALERÍA) -- */
-.galeria-p p{
-    margin-bottom: 0.5rem;
-}
-
-.galeria-img{
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 80%;
-    justify-content: space-evenly;
-    .row{
-        display: grid;
-        height: 100%;
-        width: auto;
-        margin: 0.5rem;
     }
 }
 
@@ -178,128 +153,5 @@ main{
         a:hover{
             transform: scale(1.1);
         }
-    }
-}
-
-/* -- MEDIA QUERIES CELULAR -- */
-/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
-@media screen and (min-width:345px){ 
-    /* MENU NAV */
-    .navbar-fixed .navbar-collapse{
-        display: block;
-        position: static;
-        height: auto;
-    }
-    .navbar-fixed .navbar-nav{
-        flex-direction: row;
-    }
-    .navbar-fixed .navbar-nav .nav-item{
-        text-align: center;
-    }
-    .navbar-fixed .navbar-nav .nav-link{
-        padding: 3px;
-        margin: 3px;
-    }
-
-    /* INDEX */
-    .imagen-index{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 50%);
-    }
-    .imagen-index p{
-        flex-direction: column;
-        width: auto;
-    }
-    .section-img{
-        display: flex;
-        flex-direction: column;
-    }
-    .index-section-img img{
-        width: 100%;
-        height: auto;
-        margin: 5px;
-        padding: 5px;
-    }
-    
-    /* GALERÍA */
-    .galeria-img{
-        display: flex;
-        flex-direction: column;
-    }
-    .galeria-img .row img{
-        margin-bottom: 0.5rem;
-    }
-
-    /* NOTICIAS */
-    .news{
-        width: fit-content;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-}
-
-/* media queries TABLET */
-
-
-/* -- MEDIA QUERIES DESKTOP -- */
-/* HAY QUE ARREGLAR TODO ESTO. LO DEJO PARA SABER POR DONDE EMPEZAR*/
-@media screen and (min-width:1024px){
-    /* -- MENU NAV -- */
-    .navbar-fixed .navbar-nav{
-        flex-direction: row;
-    }
-    .navbar-fixed .navbar-nav .nav-item{
-        width: auto;
-        text-align: center;
-    }
-    .navbar-fixed .navbar-nav .nav-link{
-        padding: 8px;
-        margin: 0;
-    }
-    
-    /* INDEX */
-    .imagen-index{
-        display: grid;
-        grid-template-columns: 65% 35%;
-        grid-template-rows: auto;
-    }
-    .imagen-index img{
-        width: auto;
-        height: 80%;
-    }
-    .index-section-img{
-        display: flex;
-        flex-direction: row;
-        width: 200px;
-        height: 400px;
-        justify-content: center;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    /* GALERÍA */
-    .galeria-p p{
-        margin-bottom: 6px;
-    }
-    .no-margin{
-        margin: 4px;
-    }
-    .galeria-img{
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
-        grid-template-rows: 80%;
-        justify-content: space-evenly;
-    }
-
-    /* NOTICIAS */
-    .news{
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-    }
-    .noticias{
-        width: fit-content;
-        height: auto;
     }
 }

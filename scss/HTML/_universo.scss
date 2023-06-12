@@ -12,8 +12,7 @@
     .div-universo{
         @extend %flex;
         img{
-            width: 750px;
-            height: auto;
+            @include wyh (750px, auto);
         }
     }
 }

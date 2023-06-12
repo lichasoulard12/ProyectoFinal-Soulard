@@ -1,0 +1,5 @@
+//medidas
+@mixin wyh ($width, $height){
+    width: $width;
+    height: $height;
+}
