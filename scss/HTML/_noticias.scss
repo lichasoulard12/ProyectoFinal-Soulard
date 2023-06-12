@@ -1,0 +1,30 @@
+/* -- MAIN (NOTICIAS) -- */
+.noticias{
+    h3{
+        font-style: italic;
+    }
+    img{
+        @include wyh (100%, auto);
+        @extend %box-shadow;
+    }
+    p{
+        margin-top: 0.2rem;
+    }
+    a{
+        margin-top: 0.2rem;
+        color: white;
+    }
+    a:hover{
+        font-style: italic;
+    }
+    .div-news1, .div-news2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        .noticia{
+            width: 300px;
+            margin: 20px;
+        }
+    }
+}

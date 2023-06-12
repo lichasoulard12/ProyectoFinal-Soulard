@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- etiquetas meta -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="En el apartado de noticias vas a encontrar noticias recientes sobre el campo de la ciencia y la astronomía">
+    <meta name="keywords" content="astronomia, noticias, noticias de astronomia">
     <!-- link tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Noticias - Astronomía para todos</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
             <h1> ASTRONOMÍA PARA TODOS </h1>
         </div>
 
-        <!-- menu navegación -->
+        <!-- MENU DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,34 +57,58 @@
         </nav>
     </header>
 
-    <!-- contenido principal -->
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
         <h2>Noticias del espacio</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi dolores magni, maxime quod tempore reprehenderit suscipit sunt possimus cumque non soluta repellat, porro ducimus cupiditate, rerum eligendi. Dolor, reiciendis.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium modi eum magnam maxime vitae a! Repellendus, excepturi. Ab maiores aliquid doloremque quibusdam eos. Illum, maiores consectetur provident animi nobis fugiat.</p>
-        <!-- columnas noticias -->
-        <div class="news">
-            <div class="noticias">
-              <img src="../img/exoplanet.jpg" alt="Imagen de un exoplaneta">
-              <h3 class="fs-5">"Los astrónomos han detectado directamente un exoplaneta masivo - y el método podría transformar la búsqueda de vida."</h3>
-              <p>24 de Abril del 2023 (Fuente: Astronomy)</p>
-              <a href="https://astronomy.com/news/2023/04/massive-exoplanet-could-transform-the-search-for-life" target="_blank">Leer más</a>
+        <p>Bienvenidos a la sección de noticias. Aca vas a encontrar las últimas novedades y descubrimientos en el fascinante campo de la astronomía. Mantente al día con los avances científicos, los eventos astronómicos destacados y las misiones espaciales más emocionantes. Nuestro objetivo es acercarte el universo y compartir las maravillas del cosmos. </p>
+        <hr>
+        <!-- COLUMNAS DE NOTICIAS -->
+        <div class="noticias">
+            <!-- PRIMERA FILA DE NOTICIAS (MÁS RECIENTES) -->
+            <div class="div-news1">
+                <div data-aos="fade-down-right" class="noticia">
+                    <img src="../img/new1.png" alt="Imagen de una supernova">
+                    <h3 class="fs-5">"Los astrónomos han detectado directamente un exoplaneta masivo - y el método podría transformar la búsqueda de vida."</h3>
+                    <p>12 de mayo del 2023 (Fuente: BBC News)</p>
+                    <a href="https://www.bbc.com/mundo/noticias-65576491" target="_blank">Leer más</a>
+                </div>
+                <div data-aos="fade-down" class="noticia">
+                    <img src="../img/new2.png" alt="Imagen representativa de dos objetos masivos, deformando el espacio-tiempo ">
+                    <h3 class="fs-5">"El detector de ondas gravitacionales LIGO vuelve a estar en línea después de tres años de actualizaciones"</h3>
+                    <p>22 de mayo del 2023 (Fuente: Astronomy.com)</p>
+                    <a href="https://www.astronomy.com/science/gravitational-wave-detector-ligo-is-back-online-after-3-years-of-upgrades/" target="_blank">Leer más</a>
+                </div>
+                <div data-aos="fade-down-left" class="noticia">
+                    <img src="../img/new3.png" alt="Imagen de la nebulosa de la Tarántula (NGC 2070)">
+                    <h3 class="fs-5">"Cómo el telescopio James Webb está cambiando la astronomía"</h3>
+                    <p>31 de mayo del 2023 (Fuente: Astronomy.com)</p>
+                    <a href="https://www.astronomy.com/science/how-the-james-webb-telescope-is-changing-astronomy/" target="_blank">Leer más</a>
+                </div>
             </div>
-            <div class="noticias">
-              <img src="../img/img5.jpg" alt="imagen representativa del planeta Marte y su núcleo">
-              <h3 class="fs-5">"Científicos detectan por primera vez ondas sísmicas en Marte (y por qué esto es clave para entender mejor cómo se formó la Tierra)"</h3>
-              <p>25 abril 2023 (Fuente: BBC)</p>
-              <a href="https://www.bbc.com/mundo/noticias-65386292" target="_blank">Leer más</a>
-            </div>
-            <div class="noticias">
-                <img src="../img/img6.jpg" alt="Anillo de Einstein">
-                <h3 class="fs-5">"Los 'anillos de Einstein' alrededor de galaxias distantes nos acercan a resolver el debate sobre la materia oscura"</h3>
-                <p>27 abril 2023 (Fuente: Astronomy)</p>
-                <a href="https://astronomy.com/news/2023/04/einstein-rings-inch-us-closer-to-solving-dark-matter-debate" target="_blank">Leer más</a>
+            <hr>
+            <!-- SEGUNDA FILA DE NOTICIAS (MENOS RECIENTES) -->
+            <div class="div-news2">
+                <div data-aos="fade-up-right" class="noticia">
+                    <img src="../img/new4.jpg" alt="Imagen de un exoplaneta">
+                    <h3 class="fs-5">"Los astrónomos han detectado directamente un exoplaneta masivo - y el método podría transformar la búsqueda de vida."</h3>
+                    <p>24 de abril del 2023 (Fuente: Astronomy.com)</p>
+                    <a href="https://astronomy.com/news/2023/04/massive-exoplanet-could-transform-the-search-for-life" target="_blank">Leer más</a>
+                </div>
+                <div data-aos="fade-up" class="noticia">
+                    <img src="../img/new5.jpg" alt="imagen representativa del planeta Marte y su núcleo">
+                    <h3 class="fs-5">"Científicos detectan por primera vez ondas sísmicas en Marte (y por qué esto es clave para entender mejor cómo se formó la Tierra)"</h3>
+                    <p>25 de abril del 2023 (Fuente: BBC News)</p>
+                    <a href="https://www.bbc.com/mundo/noticias-65386292" target="_blank">Leer más</a>
+                </div>
+                <div data-aos="fade-up-left" class="noticia">
+                    <img src="../img/new6.jpg" alt="Anillo de Einstein">
+                    <h3 class="fs-5">"Los 'anillos de Einstein' alrededor de galaxias distantes nos acercan a resolver el debate sobre la materia oscura"</h3>
+                    <p>27 de abril del 2023 (Fuente: Astronomy)</p>
+                    <a href="https://astronomy.com/news/2023/04/einstein-rings-inch-us-closer-to-solving-dark-matter-debate" target="_blank">Leer más</a>
+                </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, maiores. Eveniet voluptatibus saepe accusamus soluta dignissimos ipsa vel ab! Voluptatibus asperiores, optio beatae quibusdam alias laboriosam suscipit amet ea nemo!</p>
+        
     </main>
 
     <!-- PIE DE PÁGINA -->
@@ -103,5 +129,11 @@
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main div img, .index-main .introduccion-dos .div-uno img, .index-main .introduccion-dos .div-dos img, .carousel-item img, .galeria-img div img {
+.index-main div img, .index-main .introduccion-dos .div-uno img, .index-main .introduccion-dos .div-dos img, .carousel-item img, .galeria-img div img, .noticias img {
   box-shadow: #c5d9e7 2px 2px 25px; }
 
 .index-main div, .universo-main .div-universo {
@@ -101,6 +101,33 @@ main p {
       padding: 0;
       margin-bottom: 0.7rem; }
 
+/* -- MAIN (NOTICIAS) -- */
+.noticias h3 {
+  font-style: italic; }
+
+.noticias img {
+  width: 100%;
+  height: auto; }
+
+.noticias p {
+  margin-top: 0.2rem; }
+
+.noticias a {
+  margin-top: 0.2rem;
+  color: white; }
+
+.noticias a:hover {
+  font-style: italic; }
+
+.noticias .div-news1, .noticias .div-news2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center; }
+  .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
+    width: 300px;
+    margin: 20px; }
+
 /* -- BODY -- */
 body {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -150,27 +177,6 @@ main img:hover {
 
 main hr {
   color: white; }
-
-/* -- MAIN (NOTICIAS) -- */
-.news {
-  display: flex;
-  justify-content: space-evenly; }
-  .news .noticias {
-    width: 300px;
-    margin: 20px; }
-    .news .noticias img {
-      width: 100%;
-      height: auto; }
-    .news .noticias h3 {
-      font-style: italic; }
-    .news .noticias p {
-      margin-bottom: 10px; }
-    .news .noticias a {
-      display: block;
-      margin-top: 10px;
-      color: white; }
-    .news .noticias a:hover {
-      font-style: italic; }
 
 /* -- MAIN (SOBRENOSOTROS) -- */
 .info .formulario {
