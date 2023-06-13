@@ -2,12 +2,17 @@
 %box-shadow{
     box-shadow: $color-secundario 2px 2px 20px;
 }
-
 //flex
 %flex{
     display: flex;
     justify-content: center;
     padding: 0.5rem;
+}
+
+//flex 2
+%flex2{
+    display: flex;
+    flex-direction: column;
 }
 
 //Titulo h2

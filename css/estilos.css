@@ -27,6 +27,64 @@ main p {
   background-color: rgba(0, 0, 0, 0.65);
   margin-bottom: 0.1rem; }
 
+/* -- MEDIA QUERIES CELULAR -- */
+@media screen and (min-width: 345px) and (max-width: 767px) {
+  /* GENERAL */
+  h1, h2 {
+    text-align: center; }
+  p {
+    text-align: justify; }
+  /* MAIN - INDEX */
+  .index-main {
+    /* SECCIÓN 2 INDEX */ }
+    .index-main div img {
+      width: 40vh;
+      height: auto; }
+    .index-main .introduccion-dos h3 {
+      text-align: center; }
+    .index-main .introduccion-dos .div-uno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden; }
+      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .section-img1 {
+        display: none; }
+    .index-main .introduccion-dos .div-dos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden; }
+      .index-main .introduccion-dos .div-dos a {
+        display: none; }
+  /* MAIN - EL UNIVERSO*/
+  .universo-main .div-universo a img {
+    width: 40vh;
+    height: auto; }
+  /* MAIN - GALERÍA */
+  .galeria-main .carousel .carousel-item img {
+    width: 80%;
+    height: auto; }
+  .galeria-main .galeria-img {
+    display: flex;
+    flex-direction: column; }
+    .galeria-main .galeria-img img {
+      justify-content: center;
+      width: 40vh;
+      height: auto; }
+  /* MAIN - NOTICIAS */
+  .noticias .div-news1, .noticias .div-news2 {
+    grid: none !important;
+    overflow: hidden; }
+    .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
+      margin-bottom: 1rem; }
+  /* MAIN - SOBRE NOSOTROS */
+  .sobrenosotros-main .formulario {
+    overflow: hidden; }
+    .sobrenosotros-main .formulario textarea {
+      width: 100%; } }
+
+/* MEDIA QUERIES TABLET */
+/* -- MEDIA QUERIES DESKTOP -- */
 /* -- MAIN (INDEX) -- */
 .index-main div img {
   border-radius: 25px; }
@@ -142,47 +200,47 @@ main p {
     margin: 20px; }
 
 /* -- MAIN (SOBRENOSOTROS) -- */
-.main-sobrenosotros .info-uno h3, .main-sobrenosotros .info-dos h3 {
+.sobrenosotros-main .info-uno h3, .sobrenosotros-main .info-dos h3 {
   text-decoration: underline; }
 
-.main-sobrenosotros .info-uno ul {
+.sobrenosotros-main .info-uno ul {
   color: white;
   margin-bottom: 0; }
-  .main-sobrenosotros .info-uno ul li img {
+  .sobrenosotros-main .info-uno ul li img {
     background-color: white; }
-  .main-sobrenosotros .info-uno ul a {
+  .sobrenosotros-main .info-uno ul a {
     text-decoration: none;
     color: white;
     font-style: italic; }
-  .main-sobrenosotros .info-uno ul a:hover {
+  .sobrenosotros-main .info-uno ul a:hover {
     text-decoration: underline;
     color: #c5d9e7; }
 
-.main-sobrenosotros .info-dos .formulario {
+.sobrenosotros-main .info-dos .formulario {
   display: flex; }
-  .main-sobrenosotros .info-dos .formulario .comment-form {
+  .sobrenosotros-main .info-dos .formulario .comment-form {
     display: flex;
     flex-flow: column wrap;
     color: #c5d9e7;
     border-radius: 10px;
     border: 2px solid #c5d9e7;
     padding: 0.5rem; }
-    .main-sobrenosotros .info-dos .formulario .comment-form input {
+    .sobrenosotros-main .info-dos .formulario .comment-form input {
       width: 200px;
       height: auto; }
-    .main-sobrenosotros .info-dos .formulario .comment-form textarea {
+    .sobrenosotros-main .info-dos .formulario .comment-form textarea {
       margin-bottom: 0.5rem; }
-    .main-sobrenosotros .info-dos .formulario .comment-form .boton-enviar {
+    .sobrenosotros-main .info-dos .formulario .comment-form .boton-enviar {
       background-color: #c5d9e7;
       color: #333;
       border: none;
       padding: 0.5rem;
       border-radius: 5px; }
-    .main-sobrenosotros .info-dos .formulario .comment-form .boton-enviar:hover {
+    .sobrenosotros-main .info-dos .formulario .comment-form .boton-enviar:hover {
       background-color: #ccc;
       color: #fff; }
 
-.main-sobrenosotros .mapa {
+.sobrenosotros-main .mapa {
   margin: 1rem; }
 
 /* -- BODY -- */
