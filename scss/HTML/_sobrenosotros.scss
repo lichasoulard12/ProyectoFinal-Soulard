@@ -1,19 +1,61 @@
 /* -- MAIN (SOBRENOSOTROS) -- */
-.info{
-    .formulario{
-        display: block;
-        fieldset{
-            color: white;
-            display: inline-block;
+.main-sobrenosotros{
+    .info-uno, .info-dos{
+        h3{
+            text-decoration: underline;
         }
-        label, textarea{
-            display: block;
-        }  
     }
-    h3{
-        text-decoration: underline;
+    .info-uno{
+        ul{
+            color: white;
+            margin-bottom: 0;
+            li{
+                img{
+                    background-color: white;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-style: italic;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: $color-secundario;
+            }
+        }
     }
-    ul{
-        color: white;
+    .info-dos{
+        .formulario{
+            display: flex;
+            .comment-form{
+                display: flex;
+                flex-flow: column wrap;
+                color: $color-secundario;
+                border-radius: 10px;
+                border: 2px solid $color-secundario;
+                padding: 0.5rem;
+                input{
+                    @include wyh (200px, auto);
+                }
+                textarea{
+                    margin-bottom: 0.5rem;
+                }
+                .boton-enviar{
+                    background-color: $color-secundario;
+                    color: #333;
+                    border: none;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                }
+                .boton-enviar:hover{
+                    background-color: #ccc;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .mapa{
+        margin: 1rem;
     }
 }

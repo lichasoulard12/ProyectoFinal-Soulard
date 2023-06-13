@@ -142,19 +142,48 @@ main p {
     margin: 20px; }
 
 /* -- MAIN (SOBRENOSOTROS) -- */
-.info .formulario {
-  display: block; }
-  .info .formulario fieldset {
-    color: white;
-    display: inline-block; }
-  .info .formulario label, .info .formulario textarea {
-    display: block; }
-
-.info h3 {
+.main-sobrenosotros .info-uno h3, .main-sobrenosotros .info-dos h3 {
   text-decoration: underline; }
 
-.info ul {
-  color: white; }
+.main-sobrenosotros .info-uno ul {
+  color: white;
+  margin-bottom: 0; }
+  .main-sobrenosotros .info-uno ul li img {
+    background-color: white; }
+  .main-sobrenosotros .info-uno ul a {
+    text-decoration: none;
+    color: white;
+    font-style: italic; }
+  .main-sobrenosotros .info-uno ul a:hover {
+    text-decoration: underline;
+    color: #c5d9e7; }
+
+.main-sobrenosotros .info-dos .formulario {
+  display: flex; }
+  .main-sobrenosotros .info-dos .formulario .comment-form {
+    display: flex;
+    flex-flow: column wrap;
+    color: #c5d9e7;
+    border-radius: 10px;
+    border: 2px solid #c5d9e7;
+    padding: 0.5rem; }
+    .main-sobrenosotros .info-dos .formulario .comment-form input {
+      width: 200px;
+      height: auto; }
+    .main-sobrenosotros .info-dos .formulario .comment-form textarea {
+      margin-bottom: 0.5rem; }
+    .main-sobrenosotros .info-dos .formulario .comment-form .boton-enviar {
+      background-color: #c5d9e7;
+      color: #333;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px; }
+    .main-sobrenosotros .info-dos .formulario .comment-form .boton-enviar:hover {
+      background-color: #ccc;
+      color: #fff; }
+
+.main-sobrenosotros .mapa {
+  margin: 1rem; }
 
 /* -- BODY -- */
 body {
