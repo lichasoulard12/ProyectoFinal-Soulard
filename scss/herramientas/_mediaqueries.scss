@@ -20,21 +20,10 @@
             h3{
                 text-align: center;
             }
-            .div-uno{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .div-uno, .div-dos{
+                @include flex (column, wrap, none, center);
                 overflow: hidden;
-                .p2, .section-img1{
-                    display: none;
-                }
-            }
-            .div-dos{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                overflow: hidden;
-                a{
+                .p2, .section-img1, a{
                     display: none;
                 }
             }
@@ -62,8 +51,7 @@
             }
         }
         .galeria-img{
-            display: flex;
-            flex-direction: column;
+            @include flex (column, wrap, none, none);
             img{
                 justify-content: center;
                 @include wyh (40vh, auto);
@@ -94,11 +82,80 @@
 }
 
 /* MEDIA QUERIES TABLET */
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and (max-width:1023px){
 
-}
+    /* MENU NAV */
+    .navbar{
+        .navbar-collapse{
+            display: flex !important;
+            justify-content: flex-start;
+        }
+        .navbar-nav {
+            flex-direction: row;
+        }
+        .nav-item {
+            margin-left: 1rem;
+        } 
+        .navbar-toggler {
+            display: none;
+        }
+    }
 
-/* -- MEDIA QUERIES DESKTOP -- */
-@media screen and (min-width:1024px){
+    /* INDEX */
+    .index-main{
+        .introduccion-dos{
+            .div-uno, .div-dos{
+                display: block !important;
+                div, a{
+                    @include flex (none, none , center, center);
+                }
+            }
+        }
+    }
 
+    /* EL UNIVERSO */
+    .universo-main{
+        .div-universo{
+            a{
+                img{
+                    @include wyh (40vh, auto)
+                }
+            }
+        }
+    }
+
+    /* GALERÍA */
+    .galeria-main{
+        .carousel{
+            margin-top: 0.5rem ;
+            .carousel-item{
+                img{
+                    @include wyh (80%, auto);
+                    margin: 0.5rem;
+                }
+            }
+        }
+        .galeria-img{
+            @include flex (column, wrap , center, center);
+            div{
+                @include flex (column, wrap , center, center);
+                img{
+                    @include wyh (55%, auto);
+                }
+            }
+        }
+    }
+
+    /* NOTICIAS */
+    .noticias{
+        overflow: hidden;
+        .div-news1, .div-news2{
+            .noticia{
+                justify-content: space-evenly;
+                p{
+                    display: none;
+                }
+            }
+        }  
+    }
 }

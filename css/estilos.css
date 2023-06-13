@@ -42,19 +42,13 @@ main p {
       height: auto; }
     .index-main .introduccion-dos h3 {
       text-align: center; }
-    .index-main .introduccion-dos .div-uno {
+    .index-main .introduccion-dos .div-uno, .index-main .introduccion-dos .div-dos {
       display: flex;
-      flex-direction: column;
+      flex-flow: column wrap;
+      justify-content: none;
       align-items: center;
       overflow: hidden; }
-      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .section-img1 {
-        display: none; }
-    .index-main .introduccion-dos .div-dos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      overflow: hidden; }
-      .index-main .introduccion-dos .div-dos a {
+      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .section-img1, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p2, .index-main .introduccion-dos .div-dos .section-img1, .index-main .introduccion-dos .div-dos a {
         display: none; }
   /* MAIN - EL UNIVERSO*/
   .universo-main .div-universo a img {
@@ -66,7 +60,9 @@ main p {
     height: auto; }
   .galeria-main .galeria-img {
     display: flex;
-    flex-direction: column; }
+    flex-flow: column wrap;
+    justify-content: none;
+    align-items: none; }
     .galeria-main .galeria-img img {
       justify-content: center;
       width: 40vh;
@@ -84,7 +80,57 @@ main p {
       width: 100%; } }
 
 /* MEDIA QUERIES TABLET */
-/* -- MEDIA QUERIES DESKTOP -- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* MENU NAV */
+  .navbar .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-start; }
+  .navbar .navbar-nav {
+    flex-direction: row; }
+  .navbar .nav-item {
+    margin-left: 1rem; }
+  .navbar .navbar-toggler {
+    display: none; }
+  /* INDEX */
+  .index-main .introduccion-dos .div-uno, .index-main .introduccion-dos .div-dos {
+    display: block !important; }
+    .index-main .introduccion-dos .div-uno div, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos div, .index-main .introduccion-dos .div-dos a {
+      display: flex;
+      flex-flow: none none;
+      justify-content: center;
+      align-items: center; }
+  /* EL UNIVERSO */
+  .universo-main .div-universo a img {
+    width: 40vh;
+    height: auto; }
+  /* GALERÍA */
+  .galeria-main .carousel {
+    margin-top: 0.5rem; }
+    .galeria-main .carousel .carousel-item img {
+      width: 80%;
+      height: auto;
+      margin: 0.5rem; }
+  .galeria-main .galeria-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .galeria-main .galeria-img div {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; }
+      .galeria-main .galeria-img div img {
+        width: 55%;
+        height: auto; }
+  /* NOTICIAS */
+  .noticias {
+    overflow: hidden; }
+    .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
+      justify-content: space-evenly; }
+      .noticias .div-news1 .noticia p, .noticias .div-news2 .noticia p {
+        display: none; } }
+
 /* -- MAIN (INDEX) -- */
 .index-main div img {
   border-radius: 25px; }

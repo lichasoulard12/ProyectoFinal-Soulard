@@ -3,3 +3,11 @@
     width: $width;
     height: $height;
 }
+
+//flex{
+@mixin flex ($direc, $wrap, $just, $align){
+    display: flex;
+    flex-flow: $direc $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
