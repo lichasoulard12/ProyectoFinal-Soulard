@@ -4,6 +4,7 @@
         @extend %flex;
         img{
             @extend %box-shadow;
+            border-radius: 25px;
         }
     }
     .introduccion, .introduccion-dos{

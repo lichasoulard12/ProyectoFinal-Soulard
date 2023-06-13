@@ -5,6 +5,7 @@
 .carousel-item{
     img{
         @extend %box-shadow;
+        border-radius: 20px;
     }
 }
 .carrusel-p{
@@ -24,6 +25,7 @@
             @extend %box-shadow;
             padding: 0;
             margin-bottom: 0.7rem;
+            border-radius: 25px;
         }
     }
 }

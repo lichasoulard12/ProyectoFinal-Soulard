@@ -6,6 +6,7 @@
     img{
         @include wyh (100%, auto);
         @extend %box-shadow;
+        border-radius: 10px;
     }
     p{
         margin-top: 0.2rem;
@@ -17,11 +18,18 @@
     a:hover{
         font-style: italic;
     }
+    
     .div-news1, .div-news2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         justify-items: center;
+        fieldset{
+            color: $color-secundario;
+            border-radius: 10px;
+            border: 2px solid $color-secundario;
+            padding: 0.5rem;
+        }
         .noticia{
             width: 300px;
             margin: 20px;
