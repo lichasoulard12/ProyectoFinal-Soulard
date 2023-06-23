@@ -5,10 +5,10 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main div img, .index-main .introduccion-dos .div-uno img, .index-main .introduccion-dos .div-dos img, .carousel-item img, .galeria-img div img, .noticias img {
-  box-shadow: #c5d9e7 2px 2px 20px; }
+.index-main .intro-img img, .index-main .introduccion-dos .div-uno div img, .index-main .introduccion-dos .div-dos a img, .carousel-item img, .galeria-img div img, .noticias img {
+  box-shadow: 1px 2px 20px 0 #c5d9e7; }
 
-.index-main div, .universo-main .div-universo {
+.index-main .intro-img, .universo-main .div-universo {
   display: flex;
   justify-content: center;
   padding: 0.5rem; }
@@ -24,7 +24,7 @@ main h2 {
 main p {
   color: white;
   text-indent: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.68);
   margin-bottom: 0.1rem; }
 
 /* -- MEDIA QUERIES CELULAR -- */
@@ -131,12 +131,15 @@ main p {
       .noticias .div-news1 .noticia p, .noticias .div-news2 .noticia p {
         display: none; } }
 
+@media screen and (min-width: 1024px) {
+  /* INDEX */ }
+
 /* -- MAIN (INDEX) -- */
-.index-main div img {
-  border-radius: 25px; }
+.index-main .intro-img img {
+  border-radius: 50%; }
 
 .index-main .introduccion p, .index-main .introduccion-dos p {
-  margin: 0.1rem;
+  margin: 0;
   height: fit-content; }
 
 .index-main .introduccion-dos {
@@ -147,13 +150,15 @@ main p {
     display: grid;
     grid-template-areas: "p1 section-img1" "p2 section-img1"; }
     .index-main .introduccion-dos .div-uno .p1 {
-      grid-area: p1; }
+      grid-area: p1;
+      justify-self: center; }
     .index-main .introduccion-dos .div-uno .p2 {
       grid-area: p2; }
-    .index-main .introduccion-dos .div-uno img {
+    .index-main .introduccion-dos .div-uno div img {
       width: auto;
       height: 300px;
       grid-area: section-img1;
+      border-radius: 30px;
       margin-left: 0.5rem; }
   .index-main .introduccion-dos .div-dos {
     display: grid;
@@ -163,14 +168,14 @@ main p {
       grid-area: h33; }
     .index-main .introduccion-dos .div-dos p {
       grid-area: p3;
-      align-self: center;
       justify-self: center;
       margin-left: 0.5rem; }
-    .index-main .introduccion-dos .div-dos img {
+    .index-main .introduccion-dos .div-dos a img {
       grid-area: section-img2;
       margin-right: 0.5rem;
       width: 450px;
-      height: auto; }
+      height: auto;
+      border-radius: 30px; }
 
 /* MAIN (EL UNIVERSO) */
 .universo-main .click-img {
