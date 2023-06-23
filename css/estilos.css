@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main .intro-img img, .index-main .introduccion-dos .div-uno div img, .index-main .introduccion-dos .div-dos a img, .carousel-item img, .galeria-img div img, .noticias img {
+.index-main .intro-img img, .index-main .introduccion-dos .div-uno .div-uno-imagen img, .index-main .introduccion-dos .div-dos a img, .carousel-item img, .galeria-img div img, .noticias img {
   box-shadow: 1px 2px 20px 0 #c5d9e7; }
 
 .index-main .intro-img, .universo-main .div-universo {
@@ -24,6 +24,7 @@ main h2 {
 main p {
   color: white;
   text-indent: 0.5rem;
+  text-shadow: 0 0 2px black;
   background-color: rgba(0, 0, 0, 0.68);
   margin-bottom: 0.1rem; }
 
@@ -48,7 +49,7 @@ main p {
       justify-content: none;
       align-items: center;
       overflow: hidden; }
-      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .section-img1, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p2, .index-main .introduccion-dos .div-dos .section-img1, .index-main .introduccion-dos .div-dos a {
+      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p2, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
         display: none; }
   /* MAIN - EL UNIVERSO*/
   .universo-main .div-universo a img {
@@ -147,17 +148,13 @@ main p {
   .index-main .introduccion-dos .div-uno {
     margin: 0.1rem;
     padding: 0;
-    display: grid;
-    grid-template-areas: "p1 section-img1" "p2 section-img1"; }
-    .index-main .introduccion-dos .div-uno .p1 {
-      grid-area: p1;
-      justify-self: center; }
-    .index-main .introduccion-dos .div-uno .p2 {
-      grid-area: p2; }
-    .index-main .introduccion-dos .div-uno div img {
+    display: flex; }
+    .index-main .introduccion-dos .div-uno .div-uno-parrafos .p1, .index-main .introduccion-dos .div-uno .div-uno-parrafos .p2 {
+      margin: 0;
+      width: 100%; }
+    .index-main .introduccion-dos .div-uno .div-uno-imagen img {
       width: auto;
       height: 300px;
-      grid-area: section-img1;
       border-radius: 30px;
       margin-left: 0.5rem; }
   .index-main .introduccion-dos .div-dos {

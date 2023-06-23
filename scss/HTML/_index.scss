@@ -18,21 +18,16 @@
         .div-uno{
             margin: 0.1rem;
             padding: 0;
-            display: grid;
-            grid-template-areas: 
-            "p1 section-img1"
-            "p2 section-img1";
-            .p1{
-                grid-area: p1;
-                justify-self: center;
+            display: flex;
+            .div-uno-parrafos{
+                .p1, .p2{
+                    margin: 0;
+                    width: 100%;
+                }
             }
-            .p2{
-                grid-area: p2;
-            }
-            div{
+            .div-uno-imagen{
                 img{
                     @include wyh (auto, 300px);
-                    grid-area: section-img1;
                     @extend %box-shadow;
                     border-radius: 30px;
                     margin-left: 0.5rem;

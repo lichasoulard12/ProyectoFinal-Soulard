@@ -23,7 +23,7 @@
             .div-uno, .div-dos{
                 @include flex (column, wrap, none, center);
                 overflow: hidden;
-                .p2, .section-img1, a{
+                .p2, .div-uno-imagen, a{
                     display: none;
                 }
             }
