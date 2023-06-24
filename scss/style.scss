@@ -51,7 +51,7 @@ header{
     /* -- MENU NAV -- */
     nav{
         .navbar-toggler{
-            background-color: rgb(102, 176, 225);
+            background-color: $color-secundario;
         }
         .nav-link:hover{
             text-decoration: underline;
@@ -88,6 +88,7 @@ main{
 /* -- FOOTER -- */
 .pie-pagina{
     background-color: $color-principal1;
+    margin-top: 0.7rem;
     padding: 0.5rem;
     display: flex;
     align-items: center;

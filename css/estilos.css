@@ -24,8 +24,8 @@ main h2 {
 main p {
   color: white;
   text-indent: 0.5rem;
-  text-shadow: 0 0 2px black;
-  background-color: rgba(0, 0, 0, 0.68);
+  text-shadow: 0 0 10px black;
+  background-color: rgba(0, 0, 0, 0.65);
   margin-bottom: 0.1rem; }
 
 /* -- MEDIA QUERIES CELULAR -- */
@@ -37,19 +37,18 @@ main p {
     text-align: justify; }
   /* MAIN - INDEX */
   .index-main {
-    /* SECCIÓN 2 INDEX */ }
-    .index-main div img {
+    /* SECCIÓN 2 Y 3 - INDEX */ }
+    .index-main .intro-img img {
       width: 40vh;
       height: auto; }
-    .index-main .introduccion-dos h3 {
-      text-align: center; }
-    .index-main .introduccion-dos .div-uno, .index-main .introduccion-dos .div-dos {
+    .index-main .introduccion, .index-main .introduccion-dos {
       display: flex;
       flex-flow: column wrap;
       justify-content: none;
-      align-items: center;
-      overflow: hidden; }
-      .index-main .introduccion-dos .div-uno .p2, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p2, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
+      align-items: center; }
+      .index-main .introduccion h3, .index-main .introduccion-dos h3 {
+        text-align: center; }
+      .index-main .introduccion .div-uno .p1, .index-main .introduccion .div-uno .div-uno-imagen, .index-main .introduccion .div-uno a, .index-main .introduccion .div-dos .p1, .index-main .introduccion .div-dos .div-uno-imagen, .index-main .introduccion .div-dos a, .index-main .introduccion-dos .div-uno .p1, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p1, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
         display: none; }
   /* MAIN - EL UNIVERSO*/
   .universo-main .div-universo a img {
@@ -92,14 +91,25 @@ main p {
     margin-left: 1rem; }
   .navbar .navbar-toggler {
     display: none; }
+  /*display: block !important;
+    div, a{
+        @include flex (none, none , center, center);
+    }*/
   /* INDEX */
-  .index-main .introduccion-dos .div-uno, .index-main .introduccion-dos .div-dos {
-    display: block !important; }
-    .index-main .introduccion-dos .div-uno div, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos div, .index-main .introduccion-dos .div-dos a {
-      display: flex;
-      flex-flow: none none;
-      justify-content: center;
-      align-items: center; }
+  .index-main .introduccion-dos .div-uno {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: none;
+    align-items: center; }
+    .index-main .introduccion-dos .div-uno div .p1 {
+      margin-bottom: 0.5rem; }
+  .index-main .introduccion-dos .div-dos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: none;
+    align-items: center; }
+    .index-main .introduccion-dos .div-dos a {
+      margin-bottom: 0.6rem; }
   /* EL UNIVERSO */
   .universo-main .div-universo a img {
     width: 40vh;
@@ -149,26 +159,17 @@ main p {
     margin: 0.1rem;
     padding: 0;
     display: flex; }
-    .index-main .introduccion-dos .div-uno .div-uno-parrafos .p1, .index-main .introduccion-dos .div-uno .div-uno-parrafos .p2 {
-      margin: 0;
-      width: 100%; }
     .index-main .introduccion-dos .div-uno .div-uno-imagen img {
       width: auto;
       height: 300px;
       border-radius: 30px;
       margin-left: 0.5rem; }
   .index-main .introduccion-dos .div-dos {
-    display: grid;
-    grid-template-areas: "h33 h33" "section-img2 p3";
+    display: flex;
     padding: 0.1rem; }
-    .index-main .introduccion-dos .div-dos h3 {
-      grid-area: h33; }
-    .index-main .introduccion-dos .div-dos p {
-      grid-area: p3;
-      justify-self: center;
+    .index-main .introduccion-dos .div-dos div p {
       margin-left: 0.5rem; }
     .index-main .introduccion-dos .div-dos a img {
-      grid-area: section-img2;
       margin-right: 0.5rem;
       width: 450px;
       height: auto;
@@ -319,7 +320,7 @@ header {
       padding: 0.5rem;
       margin: 0; }
   header nav .navbar-toggler {
-    background-color: #66b0e1; }
+    background-color: #c5d9e7; }
   header nav .nav-link:hover {
     text-decoration: underline; }
 
@@ -343,6 +344,7 @@ main hr {
 /* -- FOOTER -- */
 .pie-pagina {
   background-color: #1a1818;
+  margin-top: 0.7rem;
   padding: 0.5rem;
   display: flex;
   align-items: center; }

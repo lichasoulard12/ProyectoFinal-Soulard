@@ -10,20 +10,19 @@
 
     /* MAIN - INDEX */
     .index-main{
-        div{
+        .intro-img{
             img{
                 @include wyh (40vh, auto);
             }
         }
-        /* SECCIÓN 2 INDEX */
-        .introduccion-dos{
+        /* SECCIÓN 2 Y 3 - INDEX */
+        .introduccion, .introduccion-dos{
+            @include flex (column, wrap, none, center);
             h3{
                 text-align: center;
             }
             .div-uno, .div-dos{
-                @include flex (column, wrap, none, center);
-                overflow: hidden;
-                .p2, .div-uno-imagen, a{
+                .p1, .div-uno-imagen, a{
                     display: none;
                 }
             }
@@ -101,13 +100,26 @@
         }
     }
 
+    /*display: block !important;
+    div, a{
+        @include flex (none, none , center, center);
+    }*/
+
     /* INDEX */
     .index-main{
         .introduccion-dos{
-            .div-uno, .div-dos{
-                display: block !important;
-                div, a{
-                    @include flex (none, none , center, center);
+            .div-uno{
+                @include flex (column, wrap , none, center);
+                div{
+                    .p1{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .div-dos{
+                @include flex (column, wrap , none, center);
+                a{
+                    margin-bottom: 0.6rem;
                 }
             }
         }

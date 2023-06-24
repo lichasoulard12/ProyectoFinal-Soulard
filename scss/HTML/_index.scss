@@ -19,12 +19,6 @@
             margin: 0.1rem;
             padding: 0;
             display: flex;
-            .div-uno-parrafos{
-                .p1, .p2{
-                    margin: 0;
-                    width: 100%;
-                }
-            }
             .div-uno-imagen{
                 img{
                     @include wyh (auto, 300px);
@@ -35,22 +29,15 @@
             }
         }
         .div-dos{
-            display: grid;
-            grid-template-areas: 
-            "h33 h33"
-            "section-img2 p3";
+            display: flex;
             padding: 0.1rem;
-            h3{
-                grid-area: h33;
-            }
-            p{
-                grid-area: p3;
-                justify-self: center;
-                margin-left: 0.5rem;
+            div{
+                p{
+                    margin-left: 0.5rem;
+                }
             }
             a{
                 img{
-                    grid-area: section-img2;
                     margin-right: 0.5rem;
                     @include wyh (450px, auto);
                     @extend %box-shadow;
