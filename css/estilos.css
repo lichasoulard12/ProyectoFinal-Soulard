@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main .intro-img img, .index-main .introduccion-dos .div-uno .div-uno-imagen img, .index-main .introduccion-dos .div-dos a img, .carousel-item img, .galeria-img div img, .noticias img {
+.index-main .intro-img img, .index-main .introduccion-dos .div-uno .div-uno-imagen img, .index-main .introduccion-dos .div-dos a img, .universo-main .seccion-dos-universo a img, .carousel-item img, .galeria-img div img, .noticias img {
   box-shadow: 1px 2px 20px 0 #c5d9e7; }
 
 .index-main .intro-img, .universo-main .div-universo {
@@ -26,7 +26,7 @@ main p {
   text-indent: 0.5rem;
   text-shadow: 0 0 10px black;
   background-color: rgba(0, 0, 0, 0.65);
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0; }
 
 /* -- MEDIA QUERIES CELULAR -- */
 @media screen and (min-width: 345px) and (max-width: 767px) {
@@ -51,9 +51,22 @@ main p {
       .index-main .introduccion .div-uno .p1, .index-main .introduccion .div-uno .div-uno-imagen, .index-main .introduccion .div-uno a, .index-main .introduccion .div-dos .p1, .index-main .introduccion .div-dos .div-uno-imagen, .index-main .introduccion .div-dos a, .index-main .introduccion-dos .div-uno .p1, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p1, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
         display: none; }
   /* MAIN - EL UNIVERSO*/
+  .universo-main h3, .universo-main h4 {
+    text-align: center; }
   .universo-main .div-universo a img {
     width: 40vh;
     height: auto; }
+  .universo-main .seccion-dos-universo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: none;
+    align-items: center; }
+    .universo-main .seccion-dos-universo a {
+      width: 100%;
+      height: auto; }
+      .universo-main .seccion-dos-universo a img {
+        width: 80% !important;
+        height: auto !important; }
   /* MAIN - GALERÍA */
   .galeria-main .carousel .carousel-item img {
     width: 80%;
@@ -183,10 +196,21 @@ main p {
     font-style: italic;
     text-decoration: none;
     color: white; }
+  .universo-main .click-img a:hover {
+    text-decoration: dashed;
+    color: #c5d9e7; }
 
 .universo-main .div-universo img {
   width: 750px;
   height: auto; }
+
+.universo-main .seccion-dos-universo a {
+  display: flex;
+  justify-content: center; }
+  .universo-main .seccion-dos-universo a img {
+    width: auto;
+    height: 300px;
+    border-radius: 30px; }
 
 /* -- MAIN (GALERÍA) -- */
 .galeria-p {

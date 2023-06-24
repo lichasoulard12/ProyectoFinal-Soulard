@@ -31,10 +31,23 @@
     
     /* MAIN - EL UNIVERSO*/
     .universo-main{
+        h3, h4{
+            text-align: center
+        }
         .div-universo{
             a{
                 img{
                     @include wyh (40vh, auto);
+                }
+            }
+        }
+        .seccion-dos-universo{
+            @include flex (column, wrap, none, center);
+            a{
+                @include wyh (100%, auto);
+                img{
+                    width: 80% !important;
+                    height: auto !important;
                 }
             }
         }

@@ -8,11 +8,26 @@
             text-decoration: none;
             color: white;
         }
+        a:hover{
+            text-decoration: dashed;
+            color: $color-secundario;
+        }
     }
     .div-universo{
         @extend %flex;
         img{
             @include wyh (750px, auto);
+        }
+    }
+    .seccion-dos-universo{
+        a{
+            display: flex;
+            justify-content: center;
+            img{
+                @include wyh (auto, 300px);
+                @extend %box-shadow;
+                border-radius: 30px;
+            }
         }
     }
 }
