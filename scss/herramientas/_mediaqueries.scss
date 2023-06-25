@@ -58,7 +58,7 @@
         .carousel{
             .carousel-item{
                 img{
-                    @include wyh (80%, auto);
+                    @include wyh (270px, auto);
                 }
             }
         }
@@ -113,11 +113,6 @@
         }
     }
 
-    /*display: block !important;
-    div, a{
-        @include flex (none, none , center, center);
-    }*/
-
     /* INDEX */
     .index-main{
         .introduccion-dos{
@@ -152,11 +147,11 @@
     /* GALERÍA */
     .galeria-main{
         .carousel{
-            margin-top: 0.5rem ;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             .carousel-item{
                 img{
-                    @include wyh (80%, auto);
-                    margin: 0.5rem;
+                    @include wyh (500px, auto);
                 }
             }
         }
@@ -166,6 +161,7 @@
                 @include flex (column, wrap , center, center);
                 img{
                     @include wyh (55%, auto);
+                    margin-top: 0.5rem;
                 }
             }
         }

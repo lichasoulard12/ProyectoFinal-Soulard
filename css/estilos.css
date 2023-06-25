@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main .intro-img img, .index-main .introduccion-dos .div-uno .div-uno-imagen img, .index-main .introduccion-dos .div-dos a img, .universo-main .seccion-dos-universo a img, .carousel-item img, .galeria-img div img, .noticias img {
+.index-main .intro-img img, .index-main .introduccion-dos .div-uno .div-uno-imagen img, .index-main .introduccion-dos .div-dos a img, .universo-main .seccion-dos-universo a img, .carousel-inner .carousel-item img, .galeria-img div img {
   box-shadow: 1px 2px 20px 0 #c5d9e7; }
 
 .index-main .intro-img, .universo-main .div-universo {
@@ -69,7 +69,7 @@ main p {
         height: auto !important; }
   /* MAIN - GALERÍA */
   .galeria-main .carousel .carousel-item img {
-    width: 80%;
+    width: 270px;
     height: auto; }
   .galeria-main .galeria-img {
     display: flex;
@@ -104,10 +104,6 @@ main p {
     margin-left: 1rem; }
   .navbar .navbar-toggler {
     display: none; }
-  /*display: block !important;
-    div, a{
-        @include flex (none, none , center, center);
-    }*/
   /* INDEX */
   .index-main .introduccion-dos .div-uno {
     display: flex;
@@ -129,11 +125,11 @@ main p {
     height: auto; }
   /* GALERÍA */
   .galeria-main .carousel {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
     .galeria-main .carousel .carousel-item img {
-      width: 80%;
-      height: auto;
-      margin: 0.5rem; }
+      width: 500px;
+      height: auto; }
   .galeria-main .galeria-img {
     display: flex;
     flex-flow: column wrap;
@@ -146,7 +142,8 @@ main p {
       align-items: center; }
       .galeria-main .galeria-img div img {
         width: 55%;
-        height: auto; }
+        height: auto;
+        margin-top: 0.5rem; }
   /* NOTICIAS */
   .noticias {
     overflow: hidden; }
@@ -216,8 +213,10 @@ main p {
 .galeria-p {
   margin-bottom: 0.5rem; }
 
-.carousel-item img {
-  border-radius: 20px; }
+.carousel-inner {
+  overflow: visible; }
+  .carousel-inner .carousel-item img {
+    border-radius: 20px; }
 
 .carrusel-p {
   margin-top: 0.5rem; }
@@ -240,37 +239,48 @@ main p {
       border-radius: 25px; }
 
 /* -- MAIN (NOTICIAS) -- */
-.noticias h3 {
+.noticias-main .noticias h3 {
   font-style: italic; }
 
-.noticias img {
+.noticias-main .noticias img {
   width: 100%;
   height: auto;
   border-radius: 10px; }
 
-.noticias p {
+.noticias-main .noticias p {
   margin-top: 0.2rem; }
 
-.noticias a {
+.noticias-main .noticias a {
   margin-top: 0.2rem;
   color: white; }
 
-.noticias a:hover {
+.noticias-main .noticias a:hover {
   font-style: italic; }
 
-.noticias .div-news1, .noticias .div-news2 {
+.noticias-main .noticias .div-news1, .noticias-main .noticias .div-news2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   justify-items: center; }
-  .noticias .div-news1 fieldset, .noticias .div-news2 fieldset {
+  .noticias-main .noticias .div-news1 fieldset, .noticias-main .noticias .div-news2 fieldset {
     color: #c5d9e7;
     border-radius: 10px;
     border: 2px solid #c5d9e7;
     padding: 0.5rem; }
-  .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
+  .noticias-main .noticias .div-news1 .noticia, .noticias-main .noticias .div-news2 .noticia {
     width: 300px;
     margin: 20px; }
+
+.noticias-main .lista-noticias ul {
+  background-color: rgba(0, 0, 0, 0.65); }
+  .noticias-main .lista-noticias ul li {
+    color: white; }
+    .noticias-main .lista-noticias ul li a {
+      color: white; }
+    .noticias-main .lista-noticias ul li a:hover {
+      font-style: italic;
+      text-decoration: underline #c5d9e7;
+      color: #c5d9e7; }
 
 /* -- MAIN (SOBRENOSOTROS) -- */
 .sobrenosotros-main .info-uno h3, .sobrenosotros-main .info-dos h3 {
@@ -346,7 +356,10 @@ header {
   header nav .navbar-toggler {
     background-color: #c5d9e7; }
   header nav .nav-link:hover {
-    text-decoration: underline; }
+    text-decoration: underline #c5d9e7;
+    color: #c5d9e7; }
+  header nav .nav-link:active {
+    color: #c5d9e7; }
 
 /* -- MAIN -- */
 main h3 {

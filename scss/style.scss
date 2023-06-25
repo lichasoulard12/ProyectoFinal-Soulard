@@ -54,7 +54,11 @@ header{
             background-color: $color-secundario;
         }
         .nav-link:hover{
-            text-decoration: underline;
+            text-decoration: underline $color-secundario;
+            color: $color-secundario;
+        }
+        .nav-link:active{
+            color: $color-secundario;
         }
     }
 }

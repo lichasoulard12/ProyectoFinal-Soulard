@@ -2,12 +2,16 @@
 .galeria-p{
     margin-bottom: 0.5rem;
 }
-.carousel-item{
-    img{
-        @extend %box-shadow;
-        border-radius: 20px;
+.carousel-inner{
+    overflow: visible;
+    .carousel-item{
+        img{
+            @extend %box-shadow;
+            border-radius: 20px;
+        }
     }
 }
+
 .carrusel-p{
     margin-top: 0.5rem;
 }
