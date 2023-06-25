@@ -1,5 +1,5 @@
 /* -- MEDIA QUERIES CELULAR -- */
-@media screen and (min-width:345px) and (max-width:767px){
+@media screen and (min-width:300px) and (max-width:767px){
     /* GENERAL */
     h1, h2{
         text-align: center;
@@ -12,7 +12,7 @@
     .index-main{
         .intro-img{
             img{
-                @include wyh (40vh, auto);
+                @include wyh (80%, auto);
             }
         }
         /* SECCIÓN 2 Y 3 - INDEX */
@@ -27,6 +27,13 @@
                 }
             }
         }
+        .introduccion-dos{
+            .div-dos{
+                p{
+                    margin-left: 0;
+                }
+            }
+        }
     }
     
     /* MAIN - EL UNIVERSO*/
@@ -36,15 +43,17 @@
         }
         .div-universo{
             a{
+                display: flex;
+                justify-content: center;
                 img{
-                    @include wyh (40vh, auto);
+                    @include wyh (80%, auto);
                 }
             }
         }
         .seccion-dos-universo{
             @include flex (column, wrap, none, center);
             a{
-                @include wyh (100%, auto);
+                @include wyh (90%, auto);
                 img{
                     width: 80% !important;
                     height: auto !important;
@@ -63,11 +72,14 @@
             }
         }
         .galeria-img{
-            @include flex (column, wrap, none, none);
-            img{
-                justify-content: center;
-                @include wyh (40vh, auto);
+            @include flex (column, wrap, center, center);
+            div{
+                @include flex (column, wrap, center, center);
+                img{
+                    @include wyh (70%, auto);
+                }
             }
+            
         }
     }
 
@@ -75,8 +87,15 @@
     .noticias{
         .div-news1, .div-news2{
             grid: none !important;
+            @include flex (column, wrap, center, center);
             overflow: hidden;
             .noticia{
+                @include wyh (100%, auto);
+                @include flex (column, wrap, center, center);
+                fieldset{
+                    @include flex (column, wrap, center, center);
+                    @include wyh (90%, auto);
+                }
                 margin-bottom: 1rem;
             }
         }
@@ -89,6 +108,16 @@
             textarea{
                 width: 100%;
             }
+        }
+    }
+
+    /* FOOTER - GENERAL */
+    .pie-pagina{
+        width: auto;
+        .footer-icons{
+            @include flex (column, wrap, center, center);
+            margin: 0;
+            padding: 0;
         }
     }
 }
@@ -179,4 +208,8 @@
             }
         }  
     }
+}
+
+@media screen and (min-width: 1024px){
+    
 }

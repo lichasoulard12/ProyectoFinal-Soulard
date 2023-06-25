@@ -29,7 +29,7 @@ main p {
   margin-bottom: 0; }
 
 /* -- MEDIA QUERIES CELULAR -- */
-@media screen and (min-width: 345px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   /* GENERAL */
   h1, h2 {
     text-align: center; }
@@ -39,7 +39,7 @@ main p {
   .index-main {
     /* SECCIÓN 2 Y 3 - INDEX */ }
     .index-main .intro-img img {
-      width: 40vh;
+      width: 80%;
       height: auto; }
     .index-main .introduccion, .index-main .introduccion-dos {
       display: flex;
@@ -50,19 +50,24 @@ main p {
         text-align: center; }
       .index-main .introduccion .div-uno .p1, .index-main .introduccion .div-uno .div-uno-imagen, .index-main .introduccion .div-uno a, .index-main .introduccion .div-dos .p1, .index-main .introduccion .div-dos .div-uno-imagen, .index-main .introduccion .div-dos a, .index-main .introduccion-dos .div-uno .p1, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p1, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
         display: none; }
+    .index-main .introduccion-dos .div-dos p {
+      margin-left: 0; }
   /* MAIN - EL UNIVERSO*/
   .universo-main h3, .universo-main h4 {
     text-align: center; }
-  .universo-main .div-universo a img {
-    width: 40vh;
-    height: auto; }
+  .universo-main .div-universo a {
+    display: flex;
+    justify-content: center; }
+    .universo-main .div-universo a img {
+      width: 80%;
+      height: auto; }
   .universo-main .seccion-dos-universo {
     display: flex;
     flex-flow: column wrap;
     justify-content: none;
     align-items: center; }
     .universo-main .seccion-dos-universo a {
-      width: 100%;
+      width: 90%;
       height: auto; }
       .universo-main .seccion-dos-universo a img {
         width: 80% !important;
@@ -74,23 +79,54 @@ main p {
   .galeria-main .galeria-img {
     display: flex;
     flex-flow: column wrap;
-    justify-content: none;
-    align-items: none; }
-    .galeria-main .galeria-img img {
+    justify-content: center;
+    align-items: center; }
+    .galeria-main .galeria-img div {
+      display: flex;
+      flex-flow: column wrap;
       justify-content: center;
-      width: 40vh;
-      height: auto; }
+      align-items: center; }
+      .galeria-main .galeria-img div img {
+        width: 70%;
+        height: auto; }
   /* MAIN - NOTICIAS */
   .noticias .div-news1, .noticias .div-news2 {
     grid: none !important;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     overflow: hidden; }
     .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 1rem; }
+      .noticias .div-news1 .noticia fieldset, .noticias .div-news2 .noticia fieldset {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto; }
   /* MAIN - SOBRE NOSOTROS */
   .sobrenosotros-main .formulario {
     overflow: hidden; }
     .sobrenosotros-main .formulario textarea {
-      width: 100%; } }
+      width: 100%; }
+  /* FOOTER - GENERAL */
+  .pie-pagina {
+    width: auto; }
+    .pie-pagina .footer-icons {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0; } }
 
 /* MEDIA QUERIES TABLET */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
