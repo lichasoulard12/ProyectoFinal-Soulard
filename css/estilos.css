@@ -152,9 +152,6 @@ main p {
       .noticias .div-news1 .noticia p, .noticias .div-news2 .noticia p {
         display: none; } }
 
-@media screen and (min-width: 1024px) {
-  /* INDEX */ }
-
 /* -- MAIN (INDEX) -- */
 .index-main .intro-img img {
   border-radius: 50%; }
@@ -325,6 +322,8 @@ main p {
 
 .sobrenosotros-main .mapa {
   margin: 1rem; }
+  .sobrenosotros-main .mapa iframe {
+    border-radius: 20px; }
 
 /* -- BODY -- */
 body {
